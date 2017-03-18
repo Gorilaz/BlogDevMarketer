@@ -19,7 +19,7 @@
                     <div class="post">
                         <h1>{{$post->title}}</h1>
                         <p>{{substr($post->body,0,300)}}{{ strlen($post->body)>300 ? "..." : "" }}</p>  
-                        <a class="btn btn-primary " href="#" role="button">Read more</a>
+                        <a class="btn btn-primary " href="{{url('blog/'.$post->slug)}}" role="button">Read more</a>
                         <hr>
                        
                     </div>
